@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'templates'
+    'myapp'
 ]
 
 MIDDLEWARE = [
@@ -69,6 +69,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'the_warriors.wsgi.application'
+
+AUTH_USER_MODEL = 'myapp.CustomUser' 
 
 
 # Database
